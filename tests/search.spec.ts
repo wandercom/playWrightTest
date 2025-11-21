@@ -1,0 +1,23 @@
+import { test, expect } from '@playwright/test';
+test.use({storageState: 'auth.json'});
+test('Search a Location', async ({ page }) => {
+  await page.goto('https://staging.wander.com/');
+  await page.getByRole('searchbox', { name: 'Location' }).click();
+  await page.getByRole('button', { name: 'California California' }).click();
+  await page.getByRole('button', { name: '14' }).nth(1).click();
+  await page.getByRole('button', { name: '20' }).nth(1).click();
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.getByRole('button', { name: 'Dates Dec 14 - Dec' }).click();
+  await page.getByRole('button', { name: 'Guests Whoever' }).click();
+  await page.getByRole('button', { name: 'Plus' }).first().click();
+  await page.getByRole('button', { name: 'Plus' }).first().click();
+  await page.getByRole('button', { name: 'Plus' }).first().click();
+  await page.getByRole('button', { name: 'Plus' }).nth(1).dblclick();
+  await page.getByRole('button', { name: 'Search' }).click();
+  await page.getByRole('button', { name: 'Filters' }).click();
+  await page.getByRole('button', { name: 'Dedicated workspace' }).click();
+  await page.getByRole('button', { name: 'Show results' }).click();
+  await page.getByRole('button', { name: 'Filter' }).click();
+  await page.getByRole('button', { name: 'Mountain view' }).click();
+  await page.getByRole('button', { name: 'Show results' }).click();
+});

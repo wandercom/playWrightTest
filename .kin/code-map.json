@@ -1,0 +1,15 @@
+{
+  "edges": [],
+  "layers": [],
+  "nodes": [],
+  "project": {
+    "analyzedAt": "2025-11-24T21:35:42Z",
+    "description": "Code map exported from Kindex for playWrightTest.",
+    "frameworks": [],
+    "gitCommitHash": "ac03ea30fdd9c1a0a6d7b3230abdf1f1fec52b32",
+    "languages": [],
+    "name": "playWrightTest"
+  },
+  "tour": [],
+  "version": "1.0.0"
+}

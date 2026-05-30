@@ -1,0 +1,16 @@
+name: playWrightTest
+audience: team
+domains:
+  - wander
+  - playwrighttest
+
+work_policy:
+  require_active_tag: false
+  linear:
+    enabled: false
+    require_issue: false
+  git:
+    block_commit_without_tag: false
+    block_commit_without_linear: false
+    block_push_without_tag: false
+    block_push_without_linear: false
